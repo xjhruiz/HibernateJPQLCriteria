@@ -22,7 +22,7 @@ public abstract class AbstractDao<T> implements IDao<T> {
 
 	@Override
 	public List<T> getAll() {
-		// distinto a jqpl
+		// distinto a jpql
 		Query query = em.createQuery("FROM " + classEntityManager.getName());
 		return query.getResultList();
 	}
